@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "GMYFPSBar.h"
+#import "ViewController.h"
+
+
 
 @interface AppDelegate ()
 
@@ -16,7 +20,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor clearColor];
+    [self.window setRootViewController:[[UINavigationController alloc] initWithRootViewController:[ViewController new]]];
+    // bugfix Application windows are expected to have a root view controller at the end of application launch
+    // https://forums.developer.apple.com/thread/15737
+    [GMYFPSBar shareInstance].hidden = NO;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

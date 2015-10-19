@@ -10,9 +10,9 @@
 		E56B97411BD0ABBF004F94AE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E56B97401BD0ABBF004F94AE /* main.m */; };
 		E56B97441BD0ABBF004F94AE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E56B97431BD0ABBF004F94AE /* AppDelegate.m */; };
 		E56B97471BD0ABBF004F94AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E56B97461BD0ABBF004F94AE /* ViewController.m */; };
-		E56B974A1BD0ABBF004F94AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E56B97481BD0ABBF004F94AE /* Main.storyboard */; };
 		E56B974C1BD0ABBF004F94AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E56B974B1BD0ABBF004F94AE /* Assets.xcassets */; };
 		E56B974F1BD0ABBF004F94AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E56B974D1BD0ABBF004F94AE /* LaunchScreen.storyboard */; };
+		E56B97581BD0C8B7004F94AE /* GMYFPSBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E56B97571BD0C8B7004F94AE /* GMYFPSBar.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +22,11 @@
 		E56B97431BD0ABBF004F94AE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E56B97451BD0ABBF004F94AE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E56B97461BD0ABBF004F94AE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E56B97491BD0ABBF004F94AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E56B974B1BD0ABBF004F94AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E56B974E1BD0ABBF004F94AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E56B97501BD0ABBF004F94AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E56B97561BD0C8B7004F94AE /* GMYFPSBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMYFPSBar.h; sourceTree = "<group>"; };
+		E56B97571BD0C8B7004F94AE /* GMYFPSBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMYFPSBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +61,10 @@
 			children = (
 				E56B97421BD0ABBF004F94AE /* AppDelegate.h */,
 				E56B97431BD0ABBF004F94AE /* AppDelegate.m */,
+				E56B97561BD0C8B7004F94AE /* GMYFPSBar.h */,
+				E56B97571BD0C8B7004F94AE /* GMYFPSBar.m */,
 				E56B97451BD0ABBF004F94AE /* ViewController.h */,
 				E56B97461BD0ABBF004F94AE /* ViewController.m */,
-				E56B97481BD0ABBF004F94AE /* Main.storyboard */,
 				E56B974B1BD0ABBF004F94AE /* Assets.xcassets */,
 				E56B974D1BD0ABBF004F94AE /* LaunchScreen.storyboard */,
 				E56B97501BD0ABBF004F94AE /* Info.plist */,
@@ -110,6 +112,7 @@
 				TargetAttributes = {
 					E56B973B1BD0ABBF004F94AE = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 5W9JNEGWA4;
 					};
 				};
 			};
@@ -138,7 +141,6 @@
 			files = (
 				E56B974F1BD0ABBF004F94AE /* LaunchScreen.storyboard in Resources */,
 				E56B974C1BD0ABBF004F94AE /* Assets.xcassets in Resources */,
-				E56B974A1BD0ABBF004F94AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E56B97471BD0ABBF004F94AE /* ViewController.m in Sources */,
+				E56B97581BD0C8B7004F94AE /* GMYFPSBar.m in Sources */,
 				E56B97441BD0ABBF004F94AE /* AppDelegate.m in Sources */,
 				E56B97411BD0ABBF004F94AE /* main.m in Sources */,
 			);
@@ -158,14 +161,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E56B97481BD0ABBF004F94AE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E56B97491BD0ABBF004F94AE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E56B974D1BD0ABBF004F94AE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -197,6 +192,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -240,6 +236,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -261,6 +258,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 1032419360@qq.com (AP24C5F8EE)";
 				INFOPLIST_FILE = FPSBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmycode.testProject.FPSBar;
@@ -272,6 +270,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 1032419360@qq.com (AP24C5F8EE)";
 				INFOPLIST_FILE = FPSBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmycode.testProject.FPSBar;
